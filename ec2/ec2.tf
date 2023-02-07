@@ -54,7 +54,7 @@ resource "aws_security_group" "ec2_sg" {
 }
 
 resource "aws_iam_instance_profile" "instance_profile" {
-  name = join("", [var.name, "-", "iam-instance-profile"])
+  name = join("", [var.name, "-", "iam-instance-profile-1"])
   role = var.iam_role_name
 }
 
